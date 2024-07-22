@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(_file_).resolve().parent.parent
 TEMP_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
@@ -26,8 +26,12 @@ SECRET_KEY = 'django-insecure-ow4mi#7a(^9jfbhd8**^d$i6bv@l8)-)bejx7wocuzh+*1n_xq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
+# Add the trusted origin to the CSRF_TRUSTED_ORIGINS setting
+CSRF_TRUSTED_ORIGINS = [
+    'https://d228-49-47-217-242.ngrok-free.app'
+]
 
 # Application definition
 
