@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(_file_).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 TEMP_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Add the trusted origin to the CSRF_TRUSTED_ORIGINS setting
 CSRF_TRUSTED_ORIGINS = [
-    'https://d228-49-47-217-242.ngrok-free.app'
+    'https://a6d6-2401-4900-1ce3-bcc6-6817-f959-35bb-b3e7.ngrok-free.app'
 ]
 
 # Application definition
